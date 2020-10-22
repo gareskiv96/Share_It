@@ -1,1 +1,1 @@
-# Share_It
+# Share_It project repository created.
