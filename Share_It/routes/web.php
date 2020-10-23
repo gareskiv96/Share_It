@@ -30,7 +30,7 @@ Route::group(['middleware' => 'role'], function() {
     Route::delete('/my-files/{id}-list', 'UsersController@deleteFile')->name('delete');
 });
 
-Route::get('/show-info/{id}{code}', 'UsersController@generateLink')->name('link');
+Route::get('/{id}{code}', 'UsersController@generateLink')->name('link');
 Route::get('/download/{id}',        'UsersController@downloadFile')->name('download');
 
 
